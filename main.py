@@ -18,10 +18,10 @@ if st.button("Question 1"):
     f'Currently showing Question {output["question"]}'
     
 if st.button("Question 2"):
-    output = db.insert({"question":2}, key)
+    output = db.put({"question":2}, key)
     f'Currently showing Question {output["question"]}'
     
 if st.button("Question 3"):
-    output = db.insert({"question":3}, key)
+    output = db.put({"question":3}, key)
     f'Currently showing Question {output["question"]}'
     
