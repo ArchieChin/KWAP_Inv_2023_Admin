@@ -14,14 +14,14 @@ db = deta.Base("current_question")
 st.title("KWAP 2023 Investment Retreat - Admin")
 key = "8brqm6kqm281"
 if st.button("Question 1"):
-    db.put({"question":1}, key)
-    "Currently showing Question 1"
+    output = db.put({"question":1}, key)
+    f"Currently showing Question {output["question"]}"
     
 if st.button("Question 2"):
-    db.insert({"question":2}, key)
-    "Currently showing Question 2"
+    output = db.insert({"question":2}, key)
+    f"Currently showing Question {output["question"]}"
     
 if st.button("Question 3"):
-    db.insert({"question":3}, key)
-    "Currently showing Question 3"
+    output = db.insert({"question":3}, key)
+    f"Currently showing Question {output["question"]}"
     
