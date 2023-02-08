@@ -15,10 +15,13 @@ st.title("KWAP 2023 Investment Retreat - Admin")
 key = "8brqm6kqm281"
 if st.button("Question 1"):
     db.put({"question":1}, key)
+    "Currently showing Question 1"
     
 if st.button("Question 2"):
     db.insert({"question":2}, key)
+    "Currently showing Question 2"
     
 if st.button("Question 3"):
     db.insert({"question":3}, key)
+    "Currently showing Question 3"
     
